@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlId">
+<head>
+    <meta charset="UTF-8" content="chrome=1" http-equiv="X-UA-Compatible" />
+    <title>Visual attribution</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/app.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="shortcut icon" href="/images/icon.png"/>
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse">
+                <ul class="nav text-center">
+                    <li>
+                        <h1>Visual attribution</h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-3">
+            <div align="center">
+                <div class="container" align="center">
+                    <img id="preview" width="400" height="400">
+                    <form class="form-inline">
+                        <label class="btn btn-default">
+                          Browse <input id="inputImg" type="file" hidden="hidden" onchange="previewFile()">
+                        </label>
+                        <button type="button" class="btn btn-primary" onclick="sendImage()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container" align="center">
+                <h3 id="dress_type">Dress type: ?</h3>
+                <h3 id="material">Material: ?</h3>
+                <h3 id="length">Length: ?</h3>
+                <h3 id="color">Color: ?</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
